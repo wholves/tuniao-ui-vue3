@@ -22,6 +22,8 @@
 | `third-party-components.md` | **第三方组件文档** | 了解和使用第三方扩展组件 |
 | `installation-guide.md` | **安装指南** | 详细的安装和配置教程 |
 | `resources-and-templates.md` | **资源与模板** | 页面模板、颜色资源、开发工具等 |
+| `github-templates-and-projects.md` | **GitHub项目模板** | 官方仓库、演示项目、开发模板等 |
+| `项目总结.md` | **项目总结报告** | 知识库建设完整统计和总结 |
 
 ---
 
