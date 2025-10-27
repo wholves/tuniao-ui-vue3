@@ -1,0 +1,592 @@
+{
+  "tuniao-ui-vue3": {
+    "version": "latest",
+    "crawl_date": "2025-10-27",
+    "total_components": 56,
+    "official_site": "https://vue3.tuniaokj.com",
+    "categories": {
+      "基础组件": {
+        "description": "最基础的UI元素，如按钮、图标、标签等",
+        "components": [
+          {
+            "name": "TnButton",
+            "title": "按钮",
+            "path": "components/button",
+            "description": "基于uni-app button组件扩展的按钮组件",
+            "keywords": ["button", "按钮", "点击"],
+            "props_count": 30,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnIcon",
+            "title": "图标",
+            "path": "components/icon",
+            "description": "基于字体的图标集，提供丰富的图标库",
+            "keywords": ["icon", "图标", "字体图标"],
+            "props_count": 12,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnTag",
+            "title": "标签",
+            "path": "components/tag",
+            "description": "用于标记和选择",
+            "keywords": ["tag", "标签", "标记"],
+            "props_count": 14,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnAvatar",
+            "title": "头像",
+            "path": "components/avatar",
+            "description": "展示头像和头像组",
+            "keywords": ["avatar", "头像", "用户头像"],
+            "props_count": 15,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnBadge",
+            "title": "徽标",
+            "path": "components/badge",
+            "description": "显示未读消息数量等提示信息",
+            "keywords": ["badge", "徽标", "角标", "未读消息"],
+            "props_count": 14,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          }
+        ]
+      },
+      "表单组件": {
+        "description": "用于数据录入和提交的表单相关组件",
+        "components": [
+          {
+            "name": "TnInput",
+            "title": "输入框",
+            "path": "components/input",
+            "description": "支持单行和多行文本输入",
+            "keywords": ["input", "输入框", "表单", "文本输入"],
+            "props_count": 25,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnForm",
+            "title": "表单",
+            "path": "components/form",
+            "description": "表单容器，支持表单验证",
+            "keywords": ["form", "表单", "验证", "校验"],
+            "has_children": true,
+            "children": ["TnFormItem"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnCheckbox",
+            "title": "复选框",
+            "path": "components/checkbox",
+            "description": "多选框组件",
+            "keywords": ["checkbox", "复选框", "多选"],
+            "has_children": true,
+            "children": ["TnCheckboxGroup"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnRadio",
+            "title": "单选框",
+            "path": "components/radio",
+            "description": "单选框组件",
+            "keywords": ["radio", "单选框", "单选"],
+            "has_children": true,
+            "children": ["TnRadioGroup"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnSwitch",
+            "title": "开关",
+            "path": "components/switch",
+            "description": "开关选择器",
+            "keywords": ["switch", "开关", "切换"],
+            "props_count": 18,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnSlider",
+            "title": "滑动条",
+            "path": "components/slider",
+            "description": "滑动选择数值",
+            "keywords": ["slider", "滑动条", "滑块"],
+            "props_count": 12,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnNumberBox",
+            "title": "步进器",
+            "path": "components/number-box",
+            "description": "数字递增递减",
+            "keywords": ["number-box", "步进器", "数字输入"],
+            "props_count": 17,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnRate",
+            "title": "评分",
+            "path": "components/rate",
+            "description": "评分组件",
+            "keywords": ["rate", "评分", "星级"],
+            "props_count": 12,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnPicker",
+            "title": "选择器",
+            "path": "components/picker",
+            "description": "支持单列、多列、级联选择",
+            "keywords": ["picker", "选择器", "选择"],
+            "props_count": 16,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnDateTimePicker",
+            "title": "日期时间选择器",
+            "path": "components/date-time-picker",
+            "description": "选择日期时间",
+            "keywords": ["date-time-picker", "日期选择", "时间选择"],
+            "props_count": 14,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnRegionPicker",
+            "title": "地区选择器",
+            "path": "components/region-picker",
+            "description": "选择省市区街道",
+            "keywords": ["region-picker", "地区选择", "省市区"],
+            "props_count": 10,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnSearchBox",
+            "title": "搜索框",
+            "path": "components/search-box",
+            "description": "搜索输入场景",
+            "keywords": ["search-box", "搜索框", "搜索"],
+            "props_count": 18,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnKeyboard",
+            "title": "软键盘",
+            "path": "components/keyboard",
+            "description": "自定义软键盘",
+            "keywords": ["keyboard", "键盘", "软键盘", "密码输入"],
+            "props_count": 10,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnImageUpload",
+            "title": "图片上传",
+            "path": "components/image-upload",
+            "description": "图片上传组件",
+            "keywords": ["image-upload", "图片上传", "上传"],
+            "props_count": 22,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          }
+        ]
+      },
+      "反馈组件": {
+        "description": "用户操作反馈相关组件",
+        "components": [
+          {
+            "name": "TnModal",
+            "title": "模态框",
+            "path": "components/modal",
+            "description": "模态弹出框",
+            "keywords": ["modal", "模态框", "弹窗", "对话框"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnActionSheet",
+            "title": "操作菜单",
+            "path": "components/action-sheet",
+            "description": "底部弹出操作菜单",
+            "keywords": ["action-sheet", "操作菜单", "底部菜单"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnPopup",
+            "title": "弹出框",
+            "path": "components/popup",
+            "description": "支持多方向弹出的容器",
+            "keywords": ["popup", "弹出框", "弹窗"],
+            "props_count": 15,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnNotify",
+            "title": "消息通知",
+            "path": "components/notify",
+            "description": "顶部消息通知",
+            "keywords": ["notify", "通知", "消息提示"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnNoticeBar",
+            "title": "通知栏",
+            "path": "components/notice-bar",
+            "description": "滚动通知栏",
+            "keywords": ["notice-bar", "通知栏", "滚动通知"],
+            "props_count": 18,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnOverlay",
+            "title": "遮罩层",
+            "path": "components/overlay",
+            "description": "遮罩层组件",
+            "keywords": ["overlay", "遮罩", "蒙层"],
+            "props_count": 4,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          }
+        ]
+      },
+      "导航组件": {
+        "description": "页面导航相关组件",
+        "components": [
+          {
+            "name": "TnNavbar",
+            "title": "顶部导航栏",
+            "path": "components/navbar",
+            "description": "自定义顶部导航栏",
+            "keywords": ["navbar", "导航栏", "顶部导航"],
+            "props_count": 18,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnTabbar",
+            "title": "底部导航栏",
+            "path": "components/tabbar",
+            "description": "自定义底部导航栏",
+            "keywords": ["tabbar", "底部导航", "导航"],
+            "has_children": true,
+            "children": ["TnTabbarItem"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnTabs",
+            "title": "标签栏",
+            "path": "components/tabs",
+            "description": "标签页切换",
+            "keywords": ["tabs", "标签栏", "选项卡"],
+            "has_children": true,
+            "children": ["TnTabsItem"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          }
+        ]
+      },
+      "展示组件": {
+        "description": "用于数据展示的组件",
+        "components": [
+          {
+            "name": "TnSwiper",
+            "title": "轮播图",
+            "path": "components/swiper",
+            "description": "轮播图组件",
+            "keywords": ["swiper", "轮播", "轮播图", "幻灯片"],
+            "props_count": 16,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnTitle",
+            "title": "标题",
+            "path": "components/title",
+            "description": "标题组件，支持多种模式",
+            "keywords": ["title", "标题"],
+            "props_count": 7,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnLineProgress",
+            "title": "线形进度条",
+            "path": "components/line-progress",
+            "description": "线形进度条",
+            "keywords": ["progress", "进度条", "进度"],
+            "props_count": 8,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnCircleProgress",
+            "title": "圆形进度条",
+            "path": "components/circle-progress",
+            "description": "圆形进度条",
+            "keywords": ["progress", "进度条", "圆形进度"],
+            "props_count": 7,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnLoading",
+            "title": "加载图标",
+            "path": "components/loading",
+            "description": "加载动画图标",
+            "keywords": ["loading", "加载", "加载中"],
+            "props_count": 8,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnLoadmore",
+            "title": "加载更多",
+            "path": "components/loadmore",
+            "description": "列表底部加载提示",
+            "keywords": ["loadmore", "加载更多", "上拉加载"],
+            "props_count": 8,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnEmpty",
+            "title": "空白页",
+            "path": "components/empty",
+            "description": "数据为空时的提示",
+            "keywords": ["empty", "空白页", "无数据"],
+            "props_count": 4,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnSteps",
+            "title": "步骤条",
+            "path": "components/steps",
+            "description": "步骤流程展示",
+            "keywords": ["steps", "步骤条", "流程"],
+            "has_children": true,
+            "children": ["TnStepsItem"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnCountDown",
+            "title": "倒计时",
+            "path": "components/count-down",
+            "description": "倒计时组件",
+            "keywords": ["count-down", "倒计时", "计时器"],
+            "props_count": 14,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnCountTo",
+            "title": "数字跳转",
+            "path": "components/count-to",
+            "description": "数字动画跳转",
+            "keywords": ["count-to", "数字跳转", "数字动画"],
+            "props_count": 8,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnCountScroll",
+            "title": "数字滚动",
+            "path": "components/count-scroll",
+            "description": "数字滚动动画",
+            "keywords": ["count-scroll", "数字滚动", "滚动数字"],
+            "props_count": 6,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnLazyLoad",
+            "title": "懒加载",
+            "path": "components/lazy-load",
+            "description": "图片懒加载",
+            "keywords": ["lazy-load", "懒加载", "图片加载"],
+            "props_count": 6,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnPhotoAlbum",
+            "title": "相册",
+            "path": "components/photo-album",
+            "description": "图片相册展示",
+            "keywords": ["photo-album", "相册", "图片列表"],
+            "props_count": 6,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnWaterFall",
+            "title": "瀑布流",
+            "path": "components/water-fall",
+            "description": "瀑布流布局",
+            "keywords": ["water-fall", "瀑布流", "流式布局"],
+            "props_count": 2,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          }
+        ]
+      },
+      "布局组件": {
+        "description": "页面布局相关组件",
+        "components": [
+          {
+            "name": "TnListItem",
+            "title": "列表",
+            "path": "components/list",
+            "description": "列表项组件",
+            "keywords": ["list", "列表", "列表项"],
+            "props_count": 13,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnSticky",
+            "title": "吸顶",
+            "path": "components/sticky",
+            "description": "吸顶容器",
+            "keywords": ["sticky", "吸顶", "固定"],
+            "props_count": 3,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnCollapse",
+            "title": "折叠面板",
+            "path": "components/collapse",
+            "description": "折叠展开内容",
+            "keywords": ["collapse", "折叠面板", "手风琴"],
+            "has_children": true,
+            "children": ["TnCollapseItem"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnSwipeAction",
+            "title": "滑动菜单",
+            "path": "components/swipe-action",
+            "description": "左滑呼出菜单",
+            "keywords": ["swipe-action", "滑动菜单", "滑动操作"],
+            "has_children": true,
+            "children": ["TnSwipeActionItem"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnSubsection",
+            "title": "分段器",
+            "path": "components/subsection",
+            "description": "分段选择器",
+            "keywords": ["subsection", "分段器", "分段选择"],
+            "has_children": true,
+            "children": ["TnSubsectionItem"],
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnSwitchTab",
+            "title": "选项卡切换",
+            "path": "components/switch-tab",
+            "description": "选项卡内容切换",
+            "keywords": ["switch-tab", "选项卡", "切换"],
+            "props_count": 7,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnBubbleBox",
+            "title": "气泡弹框",
+            "path": "components/bubble-box",
+            "description": "气泡弹出选项",
+            "keywords": ["bubble-box", "气泡", "气泡框"],
+            "props_count": 10,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnScrollList",
+            "title": "横向滚动",
+            "path": "components/scroll-list",
+            "description": "横向滚动列表",
+            "keywords": ["scroll-list", "横向滚动", "水平滚动"],
+            "props_count": 5,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnIndexList",
+            "title": "索引列表",
+            "path": "components/index-list",
+            "description": "带索引的列表",
+            "keywords": ["index-list", "索引列表", "通讯录"],
+            "props_count": 7,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnReadMore",
+            "title": "阅读更多",
+            "path": "components/read-more",
+            "description": "长文本展开收起",
+            "keywords": ["read-more", "阅读更多", "展开"],
+            "props_count": 8,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          }
+        ]
+      },
+      "日历组件": {
+        "description": "日历相关组件",
+        "components": [
+          {
+            "name": "TnCalendar",
+            "title": "日历",
+            "path": "components/calendar",
+            "description": "日历选择组件，支持单选、多选、区间选择",
+            "keywords": ["calendar", "日历", "日期选择"],
+            "props_count": 12,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          },
+          {
+            "name": "TnWeekCalendar",
+            "title": "周日历",
+            "path": "components/week-calendar",
+            "description": "周日历选择",
+            "keywords": ["week-calendar", "周日历", "签到"],
+            "props_count": 7,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          }
+        ]
+      },
+      "页面组件": {
+        "description": "页面级组件",
+        "components": [
+          {
+            "name": "TnFooter",
+            "title": "页脚",
+            "path": "components/footer",
+            "description": "页面页脚组件",
+            "keywords": ["footer", "页脚", "版权信息"],
+            "props_count": 9,
+            "supports_platforms": ["App", "H5", "微信小程序", "支付宝小程序"]
+          }
+        ]
+      }
+    },
+    "style_system": {
+      "colors": {
+        "primary_colors": ["tn-blue", "tn-red", "tn-green", "tn-yellow", "tn-orange", "tn-purple", "tn-grey", "tn-white", "tn-black"],
+        "gradient_colors": ["gradient__cool-1", "gradient__cool-2", "gradient__cool-3", "gradient__cool-4", "gradient__cool-5", "gradient__cool-6", "gradient__teal"],
+        "theme_colors": ["primary", "success", "warning", "danger", "info"],
+        "color_formats": ["内置颜色变量(tn-开头)", "渐变色(gradient__开头)", "hex", "rgb", "rgba"]
+      },
+      "sizes": {
+        "component_sizes": ["sm", "默认", "lg", "xl"],
+        "spacing": {
+          "padding": ["tn-p", "tn-p-xs", "tn-p-sm", "tn-p-lg", "tn-p-xl"],
+          "margin": ["tn-m", "tn-m-xs", "tn-m-sm", "tn-m-lg", "tn-m-xl"],
+          "directional": {
+            "top": ["tn-pt", "tn-mt"],
+            "right": ["tn-pr", "tn-mr"],
+            "bottom": ["tn-pb", "tn-mb"],
+            "left": ["tn-pl", "tn-ml"]
+          }
+        }
+      },
+      "layout": {
+        "flex": ["tn-flex-center", "tn-flex-column", "tn-flex-1"],
+        "border": ["tn-border", "tn-border-bold", "tn-border-dashed"],
+        "shadow": ["tn-shadow", "tn-shadow-blur"]
+      }
+    },
+    "common_patterns": {
+      "form_validation": {
+        "description": "表单验证模式",
+        "example": "使用TnForm配合rules进行表单验证"
+      },
+      "popup_pattern": {
+        "description": "弹窗模式",
+        "example": "使用ref调用组件的show方法显示弹窗"
+      },
+      "list_pattern": {
+        "description": "列表模式",
+        "example": "使用v-for遍历数据渲染列表项"
+      }
+    }
+  }
+}
+
