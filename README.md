@@ -21,6 +21,7 @@
 | `component-cheatsheet.md` | **组件速查表** | 快速查找组件用法 |
 | `third-party-components.md` | **第三方组件文档** | 了解和使用第三方扩展组件 |
 | `installation-guide.md` | **安装指南** | 详细的安装和配置教程 |
+| `resources-and-templates.md` | **资源与模板** | 页面模板、颜色资源、开发工具等 |
 
 ---
 
